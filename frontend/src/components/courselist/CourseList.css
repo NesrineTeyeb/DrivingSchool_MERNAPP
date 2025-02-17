@@ -1,0 +1,123 @@
+/* CourseList.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .course-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .course-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .course-card-body {
+    text-align: center;
+  }
+  
+  .course-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .course-card-text {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .embed-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajoute un espacement entre les boutons */
+  }
+  
+  .btn {
+    padding: 10px 20px; /* Réduction de la hauteur des boutons */
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    min-width: 100px; /* Fixe une largeur minimale raisonnable */
+    max-width: 200px; /* Limite la largeur maximale pour éviter l'étirement */
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background: #1e7e34;
+  }
+  
+  /* Pagination buttons */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn-pagination {
+    padding: 10px 15px; /* Ajustement de la hauteur sans élargir les boutons */
+    font-size: 18px;
+    border-radius: 5px;
+    min-width: 100px; /* Largeur minimale fixe pour uniformiser */
+    max-width: 150px; /* Empêche les boutons de devenir trop larges */
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .btn-pagination:hover {
+    opacity: 0.8;
+  }
+  
