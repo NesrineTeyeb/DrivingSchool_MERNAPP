@@ -50,12 +50,12 @@ app.use((err, req, res, next) => {
 });
 
 app.use((req, res) =>{
-  res.send('API is running');
+  res.send('API is running...');
 } );
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Serveur lancé sur le port ${PORT}`);
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`🚀 Serveur lancé sur le port ${port}`);
 });
 
 // // //  Point d'entrée du backend (serveur Express)
