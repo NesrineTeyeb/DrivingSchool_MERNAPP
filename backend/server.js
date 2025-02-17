@@ -49,9 +49,9 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Erreur interne du serveur" });
 });
 
-app.use((req, res) =>{
-  res.send('API is running...');
-} );
+app.get('/', (req, res) => {
+  res.send('API is Running ...');
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
